@@ -24,6 +24,6 @@ public interface TicketService {
 
     ApiResult<CustomPage<TicketResDto>> getAllSoldTickets(UUID eventSessionId, int page, int size);
 
-    ApiResult<TicketResDto> BronTicket(TicketBuyReqDto ticketBuyReqDto);
+
 
 }

@@ -8,10 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
-/**
- * @author Muhammad Mo'minov
- * 17.09.2021
- */
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

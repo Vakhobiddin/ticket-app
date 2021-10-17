@@ -71,8 +71,7 @@ public class TicketServiceImpl implements TicketService {
         try {
             Ticket ticket = new Ticket();
             ticket.setSeatName(ticketReqDto.getSeatName());
-//        ticket.setUser(userRepository.findById(ticketReqDto.getUserId()).orElseThrow(()
-//                -> new RestException("User not found!", HttpStatus.NOT_FOUND))); // buni qayta ko'rib chiqish kk
+
 
             ticket.setEventSession(eventSessionRepository.findById(ticketReqDto.getEventSessionId()).orElseThrow(()
                     -> new RestException("EventSession not found!", HttpStatus.NOT_FOUND)));
@@ -127,7 +126,7 @@ public class TicketServiceImpl implements TicketService {
             ticket.setTicketUsed(true);
             ticketRepository.save(ticket);
 
-            // qayta ko'rib chiqish kk
+
             TicketHistory ticketHistory = new TicketHistory();
             ticketHistory.setTicket(ticket);
             ticketHistory.setUser(user);
@@ -155,11 +154,7 @@ public class TicketServiceImpl implements TicketService {
         return ApiResult.successResponse(mapTicketResDtoCustomPage);
     }
 
-    @Override
-    public ApiResult<TicketResDto> BronTicket(TicketBuyReqDto ticketBuyReqDto) {
 
-        return null;
-    }
 
 
 

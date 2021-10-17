@@ -55,7 +55,7 @@ public class Ticket extends AbsEntity {
         this.ticketUsed = ticketUsed;
     }
 
-    private Double price;
+    private double price;
 
     @Column(name = "ticked_used")
     private boolean ticketUsed;

@@ -35,4 +35,11 @@ public class TicketPayment extends AbsEntity {
         this.payment = payment;
         this.ticket = ticket;
     }
+
+    public TicketPayment(double price, Payment payment, Ticket ticket, OrderTypeEnum orderType) {
+        this.amount=price;
+        this.payment=payment;
+        this.ticket= ticket;
+        this.orderTypeEnum=orderType;
+    }
 }
