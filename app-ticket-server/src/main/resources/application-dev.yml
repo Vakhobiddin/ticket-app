@@ -3,14 +3,14 @@ server:
 spring:
     datasource:
         password: root123
-        url: jdbc:postgresql://localhost:5432/ticket
+        url: jdbc:postgresql://localhost:5432/ussd_db
         username: postgres
     jackson:
         serialization:
             FAIL_ON_EMPTY_BEANS: false
     jpa:
         hibernate:
-            ddl-auto: update
+            ddl-auto: create
         properties:
             hibernate:
                 enable_lazy_load_no_trans: true
@@ -18,7 +18,7 @@ spring:
         show-sql: true
     sql:
         init:
-            mode: never
+            mode: always
 springdoc:
     api-docs:
         path: /api/swagger/docs

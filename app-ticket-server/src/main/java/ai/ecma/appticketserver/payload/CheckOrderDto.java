@@ -9,10 +9,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.UUID;
 
-/**
- * @author Muhammad Mo'minov
- * 30.09.2021
- */
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

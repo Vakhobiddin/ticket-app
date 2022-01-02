@@ -10,10 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
 
-/**
- * @author Muhammad Mo'minov
- * 11.10.2021
- */
+
 @RestController
 @RequiredArgsConstructor
 public class UserControllerImpl implements UserController {

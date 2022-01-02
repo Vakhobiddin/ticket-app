@@ -11,10 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.UUID;
 
-/**
- * @author Muhammad Mo'minov
- * 11.10.2021
- */
+
 @RequestMapping(AppConstant.USER_CONTROLLER)
 @Tag(name = "User controller", description = "Bu User controller")
 public interface UserController {

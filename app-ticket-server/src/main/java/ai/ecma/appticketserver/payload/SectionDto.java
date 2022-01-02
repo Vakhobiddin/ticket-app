@@ -8,10 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-/**
- * @author Muhammad Mo'minov
- * 28.09.2021
- */
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

@@ -10,10 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
-/**
- * @author Muhammad Mo'minov
- * 17.09.2021
- */
+
 @RequestMapping(AppConstant.EVENT_CONTROLLER)
 @Tag(name = "Event controller", description = "Bu event controller")
 public interface EventController {

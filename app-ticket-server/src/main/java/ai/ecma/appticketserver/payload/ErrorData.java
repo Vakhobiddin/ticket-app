@@ -6,14 +6,11 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.NamedQueries;
 
-/**
- * @author Muhammad Mo'minov
- * 12.10.2021
- */
+
 @AllArgsConstructor
 @Data
 @NoArgsConstructor
 public class ErrorData {
-    private String message; // Bla bla fildni bermading
+    private String message;
     private Integer code; // 400
 }
